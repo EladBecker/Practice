@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Elad Becker's Memory Monsters</title>
+    <link rel="stylesheet" href="memory-monsters.css" />
+</head>
+
+<body onload="init()">
+    <div class="header">
+        <img src="img/layout/logo.png">
+        <h1>Memory Monsters</h1>
+        <h2>
+            Hello, <span class="user-name"></span>.
+            <button class="change-name" onclick="changeName()">not
+                <span class="user-name"></span>
+                ?
+            </button>
+        </h2>
+    </div>
+    <div class="cards-container">
+        <div class="card" data-card="1" onclick="cardClicked(this)">
+            <img src="img/cards/1.png">
+            <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="7" onclick="cardClicked(this)">
+            <img src="img/cards/7.png">
+            <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="1" onclick="cardClicked(this)">
+            <img src="img/cards/1.png">
+            <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="7" onclick="cardClicked(this)">
+            <img src="img/cards/7.png">
+            <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="5" onclick="cardClicked(this)">
+            <img src="img/cards/5.png">
+            <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="5" onclick="cardClicked(this)">
+            <img src="img/cards/5.png">
+            <img class="back" src="img/cards/back.png">
+        </div>
+    </div>
+
+    <h4 class="stop-watch">
+        Your time is: 
+        <span class="timer">00:00.00</span><br>
+    </h4>
+    <span class="play-again"><button onclick="playAgain()">play again</button></span>
+
+    <div class="best-result"></div>
+
+    <script src="memoryMonsters.js"></script>
+</body>
+
+</html>

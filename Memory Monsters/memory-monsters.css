@@ -1,0 +1,42 @@
+.header {
+    background-color: lightblue;
+    padding: 20px;
+    border-bottom: 10px solid darkcyan;
+    color: darkcyan;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.header img {
+    float: right;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: pink;
+    height: 165px;
+    width: 165px;
+    margin: 5px;
+    position: relative;
+}
+
+.card img {
+    position: absolute;
+    z-index: 2;
+}
+
+.flipped .back {
+    display: none;
+}
+
+.play-again{
+    display: none;
+}
+
+.stop-watch{
+    display: inline-block;
+}
